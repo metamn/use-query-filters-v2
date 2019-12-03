@@ -1,0 +1,34 @@
+{
+  "name": "use-query-filters",
+  "version": "0.1.0",
+  "description": "React package to manage search filters and URL query parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metamn/use-query-filters.git"
+  },
+  "keywords": [
+    "react",
+    "package",
+    "query",
+    "filter"
+  ],
+  "author": "metamn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metamn/use-query-filters/issues"
+  },
+  "homepage": "https://github.com/metamn/use-query-filters#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
