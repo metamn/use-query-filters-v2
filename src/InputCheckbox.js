@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 
 import {
   InputCheckboxPropTypes,
-  InputCheckboxDefaultProps,
-  inputCheckboxHandleChange
-} from "use-query-filters";
+  InputCheckboxDefaultProps
+} from "./inputs.props";
+import { inputCheckboxHandleChange } from "./inputs.handlers";
 
 import { QueryParamsContext } from "../example/src/components/Filters";
 

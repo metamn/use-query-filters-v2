@@ -5,7 +5,8 @@ import InputRange from "react-input-range";
 import {
   InputRangeMultiHandlePropTypes,
   InputRangeMultiHandleDefaultProps
-} from "use-query-filters";
+} from "./inputs.props";
+import { InputRangeMultiHandleHandleChange } from "./inputs.handlers";
 
 import { QueryParamsContext } from "../example/src/components/Filters";
 

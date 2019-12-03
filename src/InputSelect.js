@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 
-import {
-  InputSelectPropTypes,
-  InputSelectDefaultProps,
-  inputSelectHandleChange
-} from "use-query-filters";
+import { InputSelectPropTypes, InputSelectDefaultProps } from "./inputs.props";
+import { inputSelectHandleChange } from "./inputs.handlers";
 
 import { QueryParamsContext } from "../example/src/components/Filters";
 

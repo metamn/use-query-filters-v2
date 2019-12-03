@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 
-import {
-  InputRadioPropTypes,
-  InputRadioDefaultProps,
-  inputRadioHandleChange
-} from "use-query-filters";
+import { InputRadioPropTypes, InputRadioDefaultProps } from "./inputs.props";
+import { InputRadioHandleChange } from "./inputs.handlers";
 
 import { QueryParamsContext } from "../example/src/components/Filters";
 

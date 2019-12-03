@@ -1,10 +1,7 @@
 import React, { useContext } from "react";
 
-import {
-  InputTextPropTypes,
-  InputTextDefaultProps,
-  inputTextHandleChange
-} from "use-query-filters";
+import { InputTextPropTypes, InputTextDefaultProps } from "./inputs.props";
+import { inputTextHandleChange } from "./inputs.handlers";
 
 /**
  * Displays the component
