@@ -1,14 +1,12 @@
 import { convertStringToQueryParamObject } from "./params";
 
-const useQueryFilters = () => {
-  return "useQueryFilters";
-};
-
 /**
  * Collects the query params from filters
  */
 const getQueryParamsFromFilters = props => {
   const { filters } = props;
+
+  console.log("x");
 
   return (
     filters &&

@@ -9,7 +9,9 @@ exports.InputCheckbox = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _useQueryFilters = require("use-query-filters");
+var _inputs = require("./inputs.props");
+
+var _inputs2 = require("./inputs.handlers");
 
 var _Filters = require("../example/src/components/Filters");
 
@@ -64,7 +66,7 @@ var InputCheckbox = function InputCheckbox(props) {
         return item === value;
       }),
       onChange: function onChange(event) {
-        return (0, _useQueryFilters.inputCheckboxHandleChange)({
+        return (0, _inputs2.inputCheckboxHandleChange)({
           name: name,
           event: event,
           set: setQueryParams,
@@ -79,8 +81,8 @@ var InputCheckbox = function InputCheckbox(props) {
 };
 
 exports.InputCheckbox = InputCheckbox;
-InputCheckbox.propTypes = _useQueryFilters.InputCheckboxPropTypes;
-InputCheckbox.defaultProps = _useQueryFilters.InputCheckboxDefaultProps;
+InputCheckbox.propTypes = _inputs.InputCheckboxPropTypes;
+InputCheckbox.defaultProps = _inputs.InputCheckboxDefaultProps;
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -94,7 +96,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _useQueryFilters = require("use-query-filters");
+var _inputs = require("./inputs.props");
+
+var _inputs2 = require("./inputs.handlers");
 
 var _Filters = require("../example/src/components/Filters");
 
@@ -145,7 +149,7 @@ var InputRadio = function InputRadio(props) {
       name: name,
       checked: currentValue === value,
       onChange: function onChange(event) {
-        return (0, _useQueryFilters.inputRadioHandleChange)({
+        return inputRadioHandleChange({
           name: name,
           event: event,
           set: setQueryParams
@@ -158,8 +162,8 @@ var InputRadio = function InputRadio(props) {
 };
 
 exports.InputRadio = InputRadio;
-InputRadio.propTypes = _useQueryFilters.InputRadioPropTypes;
-InputRadio.defaultProps = _useQueryFilters.InputRadioDefaultProps;
+InputRadio.propTypes = _inputs.InputRadioPropTypes;
+InputRadio.defaultProps = _inputs.InputRadioDefaultProps;
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -173,7 +177,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactInputRange = _interopRequireDefault(require("react-input-range"));
 
-var _useQueryFilters = require("use-query-filters");
+var _inputs = require("./inputs.props");
+
+var _inputs2 = require("./inputs.handlers");
 
 var _Filters = require("../example/src/components/Filters");
 
@@ -271,8 +277,8 @@ var InputRangeMultiHandle = function InputRangeMultiHandle(props) {
 };
 
 exports.InputRangeMultiHandle = InputRangeMultiHandle;
-InputRangeMultiHandle.propTypes = _useQueryFilters.InputRangeMultiHandlePropTypes;
-InputRangeMultiHandle.defaultProps = _useQueryFilters.InputRangeMultiHandleDefaultProps;
+InputRangeMultiHandle.propTypes = _inputs.InputRangeMultiHandlePropTypes;
+InputRangeMultiHandle.defaultProps = _inputs.InputRangeMultiHandleDefaultProps;
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -286,7 +292,9 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _useQueryFilters = require("use-query-filters");
+var _inputs = require("./inputs.props");
+
+var _inputs2 = require("./inputs.handlers");
 
 var _Filters = require("../example/src/components/Filters");
 
@@ -328,7 +336,7 @@ var InputSelect = function InputSelect(props) {
     value: currentValue,
     multiple: false,
     onChange: function onChange(event) {
-      return (0, _useQueryFilters.inputSelectHandleChange)({
+      return (0, _inputs2.inputSelectHandleChange)({
         name: name,
         event: event,
         set: setQueryParams
@@ -345,8 +353,8 @@ var InputSelect = function InputSelect(props) {
 };
 
 exports.InputSelect = InputSelect;
-InputSelect.propTypes = _useQueryFilters.InputSelectPropTypes;
-InputSelect.defaultProps = _useQueryFilters.InputSelectDefaultProps;
+InputSelect.propTypes = _inputs.InputSelectPropTypes;
+InputSelect.defaultProps = _inputs.InputSelectDefaultProps;
 "use strict";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -358,7 +366,9 @@ exports.InputText = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _useQueryFilters = require("use-query-filters");
+var _inputs = require("./inputs.props");
+
+var _inputs2 = require("./inputs.handlers");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -398,7 +408,7 @@ var InputText = function InputText(props) {
     name: name,
     value: currentValue,
     onChange: function onChange(event) {
-      return (0, _useQueryFilters.inputTextHandleChange)({
+      return (0, _inputs2.inputTextHandleChange)({
         name: name,
         event: event,
         set: setQueryParams
@@ -408,8 +418,8 @@ var InputText = function InputText(props) {
 };
 
 exports.InputText = InputText;
-InputText.propTypes = _useQueryFilters.InputTextPropTypes;
-InputText.defaultProps = _useQueryFilters.InputTextDefaultProps;
+InputText.propTypes = _inputs.InputTextPropTypes;
+InputText.defaultProps = _inputs.InputTextDefaultProps;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -755,6 +765,7 @@ exports.useQueryFilters = useQueryFilters;
 
 var getQueryParamsFromFilters = function getQueryParamsFromFilters(props) {
   var filters = props.filters;
+  console.log("x");
   return filters && filters.filter && filters.filter(function (item) {
     return item.queryParam;
   }).map(function (item) {

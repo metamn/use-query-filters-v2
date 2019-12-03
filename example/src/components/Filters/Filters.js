@@ -37,6 +37,8 @@ const QueryParamsContext = React.createContext();
 const Filters = props => {
   const { filters } = props;
 
+  console.log("f:", filters);
+
   /**
    * Loads all available param types.
    *
