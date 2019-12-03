@@ -1,9 +1,17 @@
 import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { QueryParamProvider } from "use-query-params";
 
-import DummyComponent from "use-query-filters";
+import Filters from "./components/Filters";
 
 const App = () => {
-  return <DummyComponent />;
+  return (
+    <Router>
+      <QueryParamProvider ReactRouterRoute={Route}>
+        <Filters />
+      </QueryParamProvider>
+    </Router>
+  );
 };
 
 export default App;
