@@ -1,12 +1,14 @@
 import { convertStringToQueryParamObject } from "./params";
 
+const UseQueryFilters = () => {
+  return "useQueryFilters";
+};
+
 /**
  * Collects the query params from filters
  */
 const getQueryParamsFromFilters = props => {
   const { filters } = props;
-
-  console.log("x");
 
   return (
     filters &&
@@ -33,4 +35,4 @@ export * from "./InputSelect";
 export * from "./InputRadio";
 export * from "./InputRangeMultiHandle";
 
-export { useQueryFilters, getQueryParamsFromFilters };
+export { UseQueryFilters, getQueryParamsFromFilters };

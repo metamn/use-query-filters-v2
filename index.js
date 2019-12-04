@@ -631,10 +631,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var _exportNames = {
-  useQueryFilters: true,
+  UseQueryFilters: true,
   getQueryParamsFromFilters: true
 };
-exports.getQueryParamsFromFilters = exports.useQueryFilters = void 0;
+exports.getQueryParamsFromFilters = exports.UseQueryFilters = void 0;
 
 var _params = require("./params");
 
@@ -753,7 +753,7 @@ Object.keys(_InputRangeMultiHandle).forEach(function (key) {
   });
 });
 
-var useQueryFilters = function useQueryFilters() {
+var UseQueryFilters = function UseQueryFilters() {
   return "useQueryFilters";
 };
 /**
@@ -761,11 +761,10 @@ var useQueryFilters = function useQueryFilters() {
  */
 
 
-exports.useQueryFilters = useQueryFilters;
+exports.UseQueryFilters = UseQueryFilters;
 
 var getQueryParamsFromFilters = function getQueryParamsFromFilters(props) {
   var filters = props.filters;
-  console.log("x");
   return filters && filters.filter && filters.filter(function (item) {
     return item.queryParam;
   }).map(function (item) {
@@ -1270,13 +1269,4 @@ test("Returns a query param type object from a string", function () {
   expect((0, _params.convertStringToQueryParamObject)({
     type: "StringParam"
   })).toStrictEqual(_useQueryParams.StringParam);
-});
-"use strict";
-
-var _ = require("./");
-
-describe("useQueryFilters", function () {
-  it("is truthy", function () {
-    expect(_.useQueryFilters).toBeTruthy();
-  });
 });
